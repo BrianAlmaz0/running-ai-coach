@@ -1,0 +1,12 @@
+<h1>AI Running Coach</h1>
+
+<form method = "post">
+    {% csrf_token %}
+    <button name = "mock" value = "1"> Add Mock Runs </button>
+    <button name = "generate" value = "1"> Generate Plan </button>
+</form>
+
+{% if plan %}
+    <h2>Your Training Plan </h2>
+    <pre>{{ plan }}</pre>
+{% endif %}

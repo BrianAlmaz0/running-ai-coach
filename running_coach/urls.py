@@ -3,5 +3,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('coach.urls')),
+    path('', include('coach.urls')),  # Include all routes from the app
 ]
